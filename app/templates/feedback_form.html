@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 20px;
+      color: #0B0B0B;
+      line-height: 25px;
+      }
+      h1 {
+      font-weight: 400;
+      color: #EE0303;
+      text-align: center;
+      }
+      h4 {
+      margin: 22px 0 4px;
+      color: #717171;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 50%;
+      padding: 20px;
+      box-shadow: 0 2px 5px #ccc;
+      }
+      input {
+      width: calc(50% - 10px);
+      padding: 5px;
+      border: 1px solid #000000;
+      border-radius: 3px;
+      vertical-align: middle;
+      }
+      input:hover, textarea:hover {
+      height:auto;
+      background-color:#000000;
+      outline: none;
+      border: 1px solid #095484;
+      }
+      .first-name {
+      margin-bottom: 22px;
+      }
+      span {
+      color: #6a568f;
+      }
+      th, td {
+      width: 21%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 16%;
+      text-align: left;
+      }
+      table {
+      width: 100%;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #000000;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+      }
+      input[type="date-local"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date-local"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color:#000000;
+      }
+      .item i {
+      right: 2%;
+      top: 30px;
+      z-index: 1;
+      }
+      [type="date-local"]::-webkit-calendar-picker-indicator {
+      right: 1%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+      }
+      input:required {
+      height:auto;
+      background-color:#000000;
+      opacity:0.6;
+      filter:alpha(opacity=60);
+      background-color: #FAFAFA;
+      }
+      body {
+      background-image: url("https://i1.wp.com/cdn.dsmcdn.com/ty11/product/media/images/20200908/16/10087497/12386862/1/1_org.jpg");
+      background-color: #CBCBCB;
+      background-attachment: fixed;
+      background-position:top center;
+      background-repeat:repeat;
+}
+      }
+    </style>
+</head>
+<body>
+<div class="testbox">
+    <form action="/" method="post" class="was-validated" novalidate="novalidate">
+        <marquee scrollamount="1" height="100" width="100%" direction="down">
+            <h1>Feedback Form</h1>
+        </marquee>
+        <p>Thank you for taking the time to fill in our feedback form. By providing us your feedback, you are helping us
+            understand what we do well and what improvements we need to implement.</p>
+        <div class="form-group ">
+            <h4>Name</h4>
+            <input class="form-control" type="text" name="Name" placeholder="First" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">OOPS!! Did you forget fill out here ?</div>
+        </div>
+        <div class="form-group ">
+            <h4>Surname</h4>
+            <input class="form-control" type="text" name="Surname" placeholder="Last" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Don't forget to fill here!!</div>
+        </div>
+        <div class="form-group">
+        <h4>Identity Number<span>*</span></h4>
+        <input class="form-control" type="number" name="IdentityNumber" min="10000000000" max="99999999999" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">OOPS!!</div>
+        </div>
+        <div class="form-group">
+        <h4>Email<span>*</span></h4>
+        <input class="form-control" type="email" name="Email" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">OOPS!!</div>
+        </div>
+        <div class="form-group">
+        <h4>Phone Number<span>*</span></h4>
+        <input class="form-control" type="number" name="PhoneNumber" min="1000000000" max="9999999999" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback"></div>
+             </div>
+        <div class="form-group">
+            <h4>Application Date</h4>
+            <input class="form-control" type="date" name="Application ate" placeholder="dd-mm-yyyy" value="" min="08-08-1900" max="08-08-2021" required/>
+            <i class="fas fa-calendar-alt"></i>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback"></div>
+             </div>
+        <div class="form-group">
+        <h4>How to apply<span>*</span></h4>
+        <input class="form-control" type="text" name="HowToApply" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback"></div>
+             </div>
+        <h4>Feel free to add any other comments or suggestions:</h4>
+        <textarea rows="5" name="Freetext"></textarea>
+        <small>* The information given within the Feedback Form will be used for service improvement only and are
+            strictly confidential.</small>
+        <div class="btn-block">
+            <button type="submit" href="/">Send Feedback</button>
+        </div>
+        <div class="btn-block">
+            <button onClick="location.href='http://127.0.0.1:5000/list'" type="button" >List</button>
+        </div>
+        <div class="tp-caption   tp-resizeme"
+             id="slide-57-layer-2"
+             data-x="center" data-hoffset=""
+             data-y="center" data-voffset="-72"
+             data-width="['auto','auto','auto']"
+             data-height="['auto','auto','auto']"
+             data-type="text"
+             data-responsive_offset="on"
+             data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+             data-textAlign="['inherit','inherit','inherit','inherit']"
+             data-paddingtop="[0,0,0,0]"
+             data-paddingright="[0,0,0,0]"
+             data-paddingbottom="[0,0,0,0]"
+             data-paddingleft="[0,0,0,0]"
+             style="z-index: 14; white-space: nowrap; font-size: 44px; line-height: 54px; font-weight: 600; color: rgba(255,255,255,100); letter-spacing: px;font-family:Muli;">
+            ELÇİN ZORLU
+        </div>
+    </form>
+</div>
+</body>
+</html>

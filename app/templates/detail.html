@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      html, body {
+      min-height: 100%;
+      align: center;
+      }
+      body, div, form, input, p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 20px;
+      color: #0B0B0B;
+      line-height: 25px;
+      align: center;
+      }
+      h1 {
+      font-weight: 400;
+      color: #EE0303;
+      text-align: center;
+      }
+      h4 {
+      margin: 22px 0 4px;
+      color: #717171;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 50%;
+      padding: 20px;
+      box-shadow: 0 2px 5px #ccc;
+      align: center;
+      text-align: center;
+      }
+      .first-name {
+      margin-bottom: 22px;
+      }
+      th, td {
+      width: 50%;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 16%;
+      }
+      table {
+      width: 75%;
+      text-align: center;
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #000000;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>Feedback List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <marquee scrollamount="1" height="100" width="100%"  direction="down" class="center">
+            <h1 class="center">Feedback List Detail</h1>
+        </marquee>
+    <style TYPE="TEXT/CSS">
+            table {border: 1px solid black;}
+        table td {border: 1px solid black;}
+    </style>
+     <section id="one" class="wrapper">
+        <div class="inner">
+            <div class="table-wrapper">
+                <table border="1" id="example" class="display" align="center" >
+                    <thead>
+                    <tr>
+                        <th>IdentityNumber</th>
+                        <th>Email</th>
+                        <th>PhoneNumber</th>
+                        <th>ApplicationDate</th>
+                        <th>HowToApply</th>
+                        <th>Freetext</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>{{sorted_data.IdentityNumber}}</td>
+                                <td>{{ sorted_data.Email }}</td>
+                                <td>{{ sorted_data.PhoneNumber }}</td>
+                                <td>{{ sorted_data.ApplicationDate }}</td>
+                                <td>{{ sorted_data.HowToApply }}</td>
+                                <td>{{ sorted_data.Freetext }}</td>
+                            </tr>
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </section>
+    <div class="tp-caption   tp-resizeme"
+         id="slide-57-layer-2"
+         data-x="center" data-hoffset=""
+         data-y="center" data-voffset="-72"
+         data-width="['auto','auto','auto']"
+         data-height="['auto','auto','auto']"
+         data-type="text"
+         data-responsive_offset="on"
+         data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+         data-textAlign="['inherit','inherit','inherit','inherit']"
+         data-paddingtop="[0,0,0,0]"
+         data-paddingright="[0,0,0,0]"
+         data-paddingbottom="[0,0,0,0]"
+         data-paddingleft="[0,0,0,0]"
+         style="z-index: 14; white-space: nowrap; font-size: 44px; line-height: 54px; font-weight: 600; color: rgba(255,255,255,100); letter-spacing: px;font-family:Muli;">
+        ELÇİN ZORLU
+    </div>
+</head>
+<style>
+body {
+  background-image: url("https://i1.wp.com/cdn.dsmcdn.com/ty11/product/media/images/20200908/16/10087497/12386862/1/1_org.jpg");
+  background-color: #CBCBCB;
+  background-attachment: fixed;
+  background-position:top center;
+  background-repeat:repeat;
+}
+</style>
+
